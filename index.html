@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de CEP</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="bg-white p-6 rounded-lg shadow max-w-sm w-full">
+
+        <div class="flex items-center justify-center p-5">
+            <img src="assets/img/icone-app-192x192.png" alt="Buscar CEP" class="w-16">
+        </div>
+
+        <h1 class="text-xl font-bold text-center mb-4 text-gray-600">Consulta CEP</h1>
+
+        <div class="space-y-3">
+            <input type="text" name="cep" placeholder="Digite o CEP (ex: 17142353)" maxlength="8"
+                class="w-full border border-gray-500 p-2 text-center rounded focus:outline-none focus:ring-blue-500 transition">
+            <button
+                class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition cursor-pointer">Buscar</button>
+        </div>
+    </div>
+
+    <div id="resultado"></div>
+</body>
+
+
+</html>
